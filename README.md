@@ -12,6 +12,9 @@
 - composer install
 - docker-compose up -d
 - open http://drupal.docker.localhost:8000
+- run through installation process
+- use "drupal" for username/password/dbname
+- use "mariadb" for db host and leave port empty
 ```
 
 ## Synchronize Configuration
@@ -22,3 +25,8 @@
 ```
 
 - If you have this error `Entities exist of type Shortcut link and Default. These entities need to be deleted before importing.`, replace uuid in `shortcut.set.default.yml` with null then try to re-import again. Here's a link to the [bug](https://www.drupal.org/node/2583113) report in the D8 issue queue.
+
+## Migrating Data
+```
+  - docker-compose exec --user 82 php drush import-organization --root=/var/www/html/web
+```
