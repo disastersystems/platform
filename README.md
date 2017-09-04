@@ -1,4 +1,6 @@
-# Disaster Recovery
+![Platform Logo](https://s3.amazonaws.com/disastersystems/platform-logo.png)
+
+# Platform
 
 ## Requirements
 - [Docker4Drupal](https://github.com/wodby/docker4drupal/). Please follow documentation for usage. There will be a section below to summary some main points.
@@ -8,7 +10,7 @@
 ## Installation
 
 ```
-- git clone https://github.com/poetic/disaster-recovery.git
+- git clone https://github.com/disastersystems/platform.git
 - composer install
 - docker-compose up -d
 - open http://drupal.docker.localhost:8000
@@ -30,3 +32,7 @@
 ```
   - docker-compose exec --user 82 php drush import-organization --root=/var/www/html/web
 ```
+
+## Sponsors
+
+[![Poetic Logo](https://s3.amazonaws.com/disastersystems/poetic-logo-med.png)](https://poeticsystems.com)
