@@ -1,5 +1,7 @@
 # Disaster Recovery
 
+[![Build Status](https://travis-ci.org/poetic/disaster-recovery.svg?branch=master)](https://travis-ci.org/poetic/disaster-recovery)
+
 ## Requirements
 - [Docker4Drupal](https://github.com/wodby/docker4drupal/). Please follow documentation for usage. There will be a section below to summary some main points.
 - [Composer Template for Drupal Projects](https://github.com/drupal-composer/drupal-project)
