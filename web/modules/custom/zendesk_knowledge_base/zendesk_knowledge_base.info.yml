@@ -1,0 +1,5 @@
+name: Zendesk Knowledge Base
+type: module
+description: Custom module to handle searching Knowledge Base from Zendesk.
+core: 8.x
+package: Houston Recovers

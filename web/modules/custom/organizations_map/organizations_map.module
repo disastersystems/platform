@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains organizations_map.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function organizations_map_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the organizations_map module.
+    case 'help.page.organizations_map':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom map showing organization by taxonomy terms.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function organizations_map_theme() {
+  return [
+    'organizations_map_by_term' => [
+      'template' => 'organizations_map_by_term',
+      'render element' => 'children',
+    ],
+  ];
+}

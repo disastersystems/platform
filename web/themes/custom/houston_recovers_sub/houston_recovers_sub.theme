@@ -1,0 +1,12 @@
+<?php
+// use Drupal\page_manager\Entity\Page;
+// use Drupal\Core\Form\FormStateInterface;
+// use Drupal\page_manager\Entity\PageVariant;
+// use Drupal\block_content\Entity\BlockContent;
+
+/*
+ * Implement hook_preprocess
+ */
+function houston_recovers_sub_preprocess(&$variables, $hook) {
+  $variables['basetheme_directory'] = drupal_get_path('theme', 'houston_recovers_base');
+}

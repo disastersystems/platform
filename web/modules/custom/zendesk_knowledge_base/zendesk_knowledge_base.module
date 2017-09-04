@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains zendesk_knowledge_base.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function zendesk_knowledge_base_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the zendesk_knowledge_base_integrati module.
+    case 'help.page.zendesk_knowledge_base':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom module to handle searching Knowledge Base from Zendesk.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function zendesk_knowledge_base_theme() {
+  return [
+    'knowledge_base_search_block' => [
+      'template' => 'zendesk_knowledge_base',
+      'variables' => [
+        'articles' => NULL,
+      ],
+    ],
+  ];
+}

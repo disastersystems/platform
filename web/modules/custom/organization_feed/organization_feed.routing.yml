@@ -1,0 +1,9 @@
+organization_feed.organization_feed_endpoints_form:
+  path: '/admin/config/towne-lake/endpoints'
+  defaults:
+    _form: '\Drupal\organization_feed\Form\OrganizationFeedEndpointsForm'
+    _title: 'Organization Feed Endpoints'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

@@ -1,0 +1,16 @@
+global:
+  css:
+    theme:
+      css/normalize.css: {}
+      css/webflow.css: {}
+      # css/towne-lake.webflow.css: {}
+      # css/custom.css: {}
+  js:
+    js/modernizr.js: {}
+    js/webflow.js: {}
+    js/jquery.matchHeight-min.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings

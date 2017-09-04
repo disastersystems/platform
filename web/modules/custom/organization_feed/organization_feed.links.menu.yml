@@ -1,0 +1,6 @@
+organization_feed.organization_feed_endpoints_form:
+  title: 'Organization Feed Endpoints'
+  route_name: organization_feed.organization_feed_endpoints_form
+  description: 'Organization Feed Endpoints'
+  parent: system.admin_config_system
+  weight: 99
