@@ -1,0 +1,22 @@
+uuid: b2c8d015-8b74-48a6-bc86-c57b54efacca
+langcode: en
+status: true
+dependencies:
+  theme:
+    - disaster_recovery
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: disaster_recovery_local_tasks
+theme: disaster_recovery
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
