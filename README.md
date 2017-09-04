@@ -17,8 +17,8 @@
 ## Synchronize Configuration
 ```
   - cat config/sync/system.site.yml to get uuid.
-  - docker-compose exec --user 82 php drush cset "system.site" uuid "uuid-from-system-site-yml"
-  - docker-compose exec --user 82 php drush config-import
+  - docker-compose exec --user 82 php drush cset "system.site" uuid "uuid-from-system-site-yml" --root=/var/www/html/web
+  - docker-compose exec --user 82 php drush config-import --root=/var/www/html/web
 ```
 
-- If you have this error `Entities exist of type Shortcut link and Default. These entities need to be deleted before importing.`, replace uuid in `shortcut.set.default.yml` as null then try to re-import again. Here's a link to the [bug](https://www.drupal.org/node/2583113) report in the D8 issue queue.
+- If you have this error `Entities exist of type Shortcut link and Default. These entities need to be deleted before importing.`, replace uuid in `shortcut.set.default.yml` with null then try to re-import again. Here's a link to the [bug](https://www.drupal.org/node/2583113) report in the D8 issue queue.
