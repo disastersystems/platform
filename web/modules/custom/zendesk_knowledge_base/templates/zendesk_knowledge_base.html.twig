@@ -1,11 +1,12 @@
-<h2>What do you need to know?</h2>
-<form id="knowledge-base-search">
-  <input type="search" id="search-query" name="search" placeholder="search articles" />
-  <input type="submit" id="search-submit" value="search" />
-</form>
-
-<ul>
-{% for article in articles %}
-  <li><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></li>
-{% endfor %}
-</ul>
+<div class="container-fluid">
+  <h2>What do you need to know?</h2>
+  <form id="knowledge-base-search">
+    <input type="search" id="search-query" class="form-control" name="search" placeholder="search articles" />
+    <button type="submit" class="btn btn-primary" id="search-submit">Search</button>
+  </form>
+  <ul>
+    {% for article in articles %}
+      <li><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

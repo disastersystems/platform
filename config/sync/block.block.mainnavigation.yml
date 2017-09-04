@@ -1,22 +1,22 @@
-uuid: 353fe848-2d91-4b27-ab4b-082dc3fd5251
+uuid: 57715bc0-3aa3-4116-a7d3-796ab3fb6cd7
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main-menu
+    - system.menu.main
   module:
     - system
   theme:
     - disaster_recovery
-id: disaster_recovery_mainmenu
+id: mainnavigation
 theme: disaster_recovery
 region: header
-weight: -5
+weight: 0
 provider: null
-plugin: 'system_menu_block:main-menu'
+plugin: 'system_menu_block:main'
 settings:
-  id: 'system_menu_block:main-menu'
-  label: 'Main Menu'
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
   provider: system
   label_display: '0'
   level: 1
