@@ -7,8 +7,8 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
-      - main-menu
-    parent: 'main-menu:'
+      - main
+    parent: 'main:'
 name: Page
 type: page
 description: Page
