@@ -1,0 +1,19 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: themes/custom/disaster_recovery/favicon.ico
+  url: 'http://drupal.docker.localhost:8000/themes/custom/disaster_recovery/favicon.ico'
+  use_default: 1
+schemas:
+  bootstrap: 8000
+  disaster_recovery: 8000
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 0
+  node_user_picture: 1
+logo:
+  path: themes/custom/disaster_recovery/logo.svg
+  url: ''
+  use_default: 1
+cdn_jsdelivr_theme: bootstrap
+table: ''
