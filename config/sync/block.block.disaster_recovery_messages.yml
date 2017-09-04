@@ -1,0 +1,22 @@
+uuid: db4c9198-438e-4e79-9a17-2285b0461036
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - disaster_recovery
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: disaster_recovery_messages
+theme: disaster_recovery
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

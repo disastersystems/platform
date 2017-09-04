@@ -1,0 +1,20 @@
+uuid: 27598ed3-0d96-471c-8c44-c3ecc84fe914
+langcode: en
+status: true
+dependencies:
+  module:
+    - zendesk_knowledge_base
+  theme:
+    - bootstrap
+id: knowledgebasesearchblock
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: knowledge_base_search_block
+settings:
+  id: knowledge_base_search_block
+  label: 'Knowledge Base Search Block'
+  provider: zendesk_knowledge_base
+  label_display: '0'
+visibility: {  }

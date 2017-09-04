@@ -1,0 +1,20 @@
+uuid: d38f2756-2479-4489-94fd-ba9019bd591b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - disaster_recovery
+id: disaster_recovery_mainpagecontent
+theme: disaster_recovery
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

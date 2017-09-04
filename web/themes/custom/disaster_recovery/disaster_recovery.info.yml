@@ -7,6 +7,6 @@ description: 'Uses the jsDelivr CDN for all CSS and JavaScript. No source files 
 package: 'Bootstrap'
 
 regions:
-  header: 'Top Bar'
+  header: 'Header'
   content: 'Content'
   footer: 'Footer'
