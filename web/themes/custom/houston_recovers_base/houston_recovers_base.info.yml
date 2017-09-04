@@ -1,8 +1,0 @@
-name: Houston Recovers Base Theme
-type: theme
-description: Houston Recovers Base Theme based on Webflow
-package: Other
-core: 8.x
-
-libraries:
-  - houston_recovers_base/global
