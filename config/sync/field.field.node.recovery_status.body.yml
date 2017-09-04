@@ -1,0 +1,22 @@
+uuid: 3450a463-c69d-4c8e-a210-c3cf2832d270
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recovery_status
+  module:
+    - text
+id: node.recovery_status.body
+field_name: body
+entity_type: node
+bundle: recovery_status
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

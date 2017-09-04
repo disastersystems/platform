@@ -1,0 +1,9 @@
+uuid: bd94c41a-21e2-4fe5-a32c-cb87fa3eb9c4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Status Color'
+vid: status_color
+description: ''
+hierarchy: 0
+weight: 0

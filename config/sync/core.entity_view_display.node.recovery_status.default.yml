@@ -1,0 +1,35 @@
+uuid: a7970f03-ea01-4c91-9db9-59e557ad3dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.recovery_status.body
+    - field.field.node.recovery_status.field_status
+    - node.type.recovery_status
+  module:
+    - text
+    - user
+id: node.recovery_status.default
+targetEntityType: node
+bundle: recovery_status
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_status:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

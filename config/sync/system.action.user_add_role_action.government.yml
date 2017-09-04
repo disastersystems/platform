@@ -1,0 +1,14 @@
+uuid: 99996fac-eb77-4478-9c5a-3d9c949783c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.government
+  module:
+    - user
+id: user_add_role_action.government
+label: 'Add the Government role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: government

@@ -1,0 +1,28 @@
+uuid: 247f1232-c973-4571-9d8e-b9d92feae838
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recovery_status.body
+    - node.type.recovery_status
+  module:
+    - text
+    - user
+id: node.recovery_status.teaser
+targetEntityType: node
+bundle: recovery_status
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

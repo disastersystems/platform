@@ -1,0 +1,61 @@
+uuid: b64835b2-35b5-424a-8579-e6c83b12d940
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organization.field_address
+    - field.field.node.organization.field_description
+    - field.field.node.organization.field_geofield
+    - field.field.node.organization.field_needs
+    - field.field.node.organization.field_phone
+    - field.field.node.organization.field_provides
+    - field.field.node.organization.field_website
+    - field.field.node.organization.field_written_address
+    - node.type.organization
+  module:
+    - taxonomy
+    - telephone
+    - text
+    - user
+id: node.organization.teaser
+targetEntityType: node
+bundle: organization
+mode: teaser
+content:
+  field_description:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_needs:
+    type: entity_reference_rss_category
+    weight: 5
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+  field_written_address:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_address: true
+  field_geofield: true
+  field_provides: true
+  field_website: true
+  links: true

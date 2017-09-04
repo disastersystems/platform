@@ -1,0 +1,28 @@
+uuid: 1c80c6b0-dd56-4fe5-9470-ec985c49d724
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_provides
+    - node.type.organization
+    - taxonomy.vocabulary.resources
+id: node.organization.field_provides
+field_name: field_provides
+entity_type: node
+bundle: organization
+label: Provides
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      resources: resources
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

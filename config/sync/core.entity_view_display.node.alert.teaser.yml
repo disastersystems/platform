@@ -1,0 +1,20 @@
+uuid: 2b8ddfc4-94d4-44da-8fae-88386835c988
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.alert.field_message
+    - node.type.alert
+  module:
+    - user
+id: node.alert.teaser
+targetEntityType: node
+bundle: alert
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_message: true

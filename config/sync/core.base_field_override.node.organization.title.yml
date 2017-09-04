@@ -1,0 +1,18 @@
+uuid: 6ea4922c-6711-4a21-8571-ea6e48087a38
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.organization
+id: node.organization.title
+field_name: title
+entity_type: node
+bundle: organization
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

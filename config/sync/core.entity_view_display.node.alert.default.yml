@@ -1,0 +1,26 @@
+uuid: b00c3dc5-5988-4d2d-8138-f9d07e7cad58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.alert.field_message
+    - node.type.alert
+  module:
+    - user
+id: node.alert.default
+targetEntityType: node
+bundle: alert
+mode: default
+content:
+  field_message:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

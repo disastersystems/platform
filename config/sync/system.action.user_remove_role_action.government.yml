@@ -1,0 +1,14 @@
+uuid: 5ecdda25-98c9-41d8-8e05-cfa6d7aab04a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.government
+  module:
+    - user
+id: user_remove_role_action.government
+label: 'Remove the Government role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: government
